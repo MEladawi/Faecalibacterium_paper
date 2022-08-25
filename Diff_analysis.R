@@ -123,9 +123,7 @@ for (ds in 1:length(data_sets))
   if(!dir.exists(data_sets[ds]))
     dir.create(data_sets[ds])
   
-  
-  #creating the normalization factor:
-  dds <- estimateSizeFactors(dds, type = 'poscounts')
+
   #get the normalized counts
   normalized_counts <- counts(dds, normalized=TRUE)
   write.csv(normalized_counts, file=paste0("./", data_sets[ds], "/normalized counts.csv"))
