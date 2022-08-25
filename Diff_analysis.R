@@ -37,8 +37,6 @@ contrasts <- list(
   list(list("Group", "Sham_FP", "Sham"), list("Group", "CKD", "Sham"), list("Group", "CKD_FP", "CKD"))
 )
 
-#two figures we need to generate
-fig_data <- c("Bacteroides", "Faecalibacterium")
 
 #set the working directory
 setwd(directory)
