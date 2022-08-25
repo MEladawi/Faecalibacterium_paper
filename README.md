@@ -13,8 +13,7 @@ BiocManager::install("edgeR")
 
 ## To reproduce the results
 * Replace CodeDirectory in the code line 23 with the directory of the Diff_analysis.R file on your machine
-* Prepare two csv files for each dataset named as "[ds_name]_data.csv" & "[ds_name]_meta.csv" for count and metadata respectively.
-** For example, for the dataset "CKD-AmericanHuman," the required files are CKD-AmericanHuman_data.csv & CKD-AmericanHuman_meta.csv
+* Prepare two csv files for each dataset named as "[ds_name]_data.csv" & "[ds_name]_meta.csv" for count and metadata respectively. For example, for the dataset "CKD-AmericanHuman," the required files are CKD-AmericanHuman_data.csv & CKD-AmericanHuman_meta.csv
 * Place the data files in the same directory of the Diff_analysis.R file.
 
 ## Output results:
