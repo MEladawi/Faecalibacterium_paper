@@ -99,7 +99,7 @@ for (ds in 1:length(data_sets))
   if (intercept)
   {
     dds <- DESeqDataSetFromMatrix (
-      countData = round(count_data), 
+      countData = count_data, 
       colData = col_data,
       design = ~ Group
     )
@@ -109,7 +109,7 @@ for (ds in 1:length(data_sets))
   else
   {
     dds <- DESeqDataSetFromMatrix (
-      countData = round(count_data), 
+      countData = count_data, 
       colData = col_data,
       design = ~-1 +  Group
     )
