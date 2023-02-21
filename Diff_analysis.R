@@ -144,9 +144,6 @@ for (ds in 1:length(data_sets))
     #remove NA padj rows
     res <- res[!is.na(res$padj), ]
     
-    #remove values with padj > 0.05
-    #res <- res[res$padj<=0.05, ]
-    
     #order the results based on the adjusted p-value
     res <- res[order(res$padj), ] 
     
